@@ -25,7 +25,7 @@
 
 			        <a href="../gallery/gallery.html"><li class="nav_buttons">Gallery</li></a>
 
-			        <li class="nav_buttons_active">Contact</li>
+			        <li class="nav_buttons_active">Login</li>
 		        </ul>
 	        </nav>
 
@@ -52,7 +52,7 @@
 <!--								#Gotten from w3 schools https://www.w3schools.com/howto/howto_css_signup_form.asp-->
 
 								<div id="singup-button-box">
-									<button onclick="document.getElementById('signup').style.display='block'" style="width:auto;" id="singup-button">Sign Up</button>
+									<button onclick="document.getElementById('signup').style.display='block'" id="singup-button">Sign Up</button>
 								</div>
 								<div id="signup" class="modal">
 									<span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -83,7 +83,6 @@
 										</div>
 									</form>
 								</div>
-
 	    	    	        </div>    
 	    	            </div>	
 	    	        </div>
@@ -92,10 +91,9 @@
 	    </div>
 	</div>
 
-	<footer class="contact_footer">       
-		    &copy;2022
+	<footer class="login_footer">
+		<p>&copy;2022</p>
     </footer>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -105,7 +103,6 @@
 
 	<script>
 	var modal = document.getElementById('id01');
-
 	window.onclick = function(event) {
 	if (event.target == modal) {
 	modal.style.display = "none";}
