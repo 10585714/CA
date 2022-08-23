@@ -1031,7 +1031,7 @@ span.icon_about{
     margin-bottom:100px;
 }
 
-#inner_store_container_book{
+#book_inner_store_container{
     font-size: 13px;
     margin: 0;
     padding-bottom: 15px;
@@ -1167,6 +1167,7 @@ span.icon_about{
 .inner_store_container img{
     padding-left:65px;
 }
+
 .middle_store_container{
     font-size: 13px;
     margin: 0;
