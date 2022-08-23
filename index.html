@@ -3,13 +3,18 @@
 <head>
 	<title>Home | What's for Dinner?</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://kit.fontawesome.com/22bd9419e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
 			<nav>
 				<div class="logo_in_header">
-					<img src="" alt="">
+					<img src="assets/images/banner.jpeg" alt="">
 				</div>
 				<ul class="nav_main">
 					<li class="nav_buttons_active">Home</li>
@@ -20,26 +25,65 @@
 			</nav>
 		</header>
 		<div id="main_image">
-			<img id="home_main_image_1" src="../assets/images/cherries.jpeg">
-			<img id="home_main_image_2" src="../assets/images/cherries.jpeg">
+			<div class="home_box_right"></div>
+			<img id="home_main_image" src="assets/images/banner.jpg"></div>
 			<div id="home_banner_text_outer">
 			    <div id="banner_text">
-			        <h1>What's for Dinner?</h1>
-			        <div id="inner_home_text_banner">
-			            <h4>Welcome to "What's for dinner?"</h4>
-			        </div>
-			        <p>A delicious subscription service, to inspire every meal you have. </p>
-			    </div> 
-			</div>   
-		</div>
-	<div id="text_box_home_outer">
-		<div id="text_box_booking_inner">
-			<h3>See our recipes of the Month! </h3>
-			<h4></h4>
-			<p>Our fully furnished ensuite bedrooms are both cosy and comfortable. Boasting an ideal loation our guestrooms will ensure a sounds night sleep surrounded by a deep blue colour palette. Choose form a single sized, twin or double sized bedroom.</p>
+					<div id="inner_home_text_banner">
+			        <h1>Whats for Dinner?<br></h1>
+						<h4>Welcome to our recipe library</h4>
+			        <p>Wonderful, delicious and delightful dinner recipes.</p>
+					</div>
+			    </div>
+			</div>
+	    </div>
+	<div id="about_icon_box">
+	    <div class="icon_box_inner">
+			<span class="pink_circle">
+	    		<span class="icon_about"><i class="fas fa-utensils"></i></span>
+			</span>
+	    	<h4>Eat</h4>
+	    	<p>A one stop web recipe subscription service for all of your culinary needs.</p>
+	    </div>
+	    <div class="icon_box_inner">
+	        <span class="pink_circle">
+	    		<span class="icon_about"><i class="fas fa-directions"></i></span>
+	    	</span>
+	    	<h4>Direction</h4>
+	    	<p>Gain direction on what <br> foods to eat and when!</p>
+	    </div>
+
+	    <div class="icon_box_inner">
+	    	<span class="pink_circle">
+	    		<span class="icon_about"><i class="fas fa-couch"></i></span>
+	    	</span>
+	    	<h4>Relax</h4>
+	    	<p>Relax every evening knowing <br> that tomorrow's dinner <br> is sorted by us.</p>
+	    </div>
+	</div>
+
+	<div id="filler_box_recipe_display"></div>
+	<div id="outer_box_recipe_display">
+		<h1><a href="login/login.html">Subscribe</a> to gain access to our recipes! There is a new range out every week. Receive these delicious recipes straight into your inbox! </h1>
+		<div id="inner_box_recipe_display">
+			<div class="display_recipe_box"><img  class="display_recipe_box_img" src="assets/images/cauliflower-rice-paella-spanish-rice-f.jpg"></div>
+			<div class="display_recipe_box"><img  class="display_recipe_box_img" src="assets/images/keto-chicken-satay-peanut-sauce-f.jpg"></div>
+			<div class="display_recipe_box"><img  class="display_recipe_box_img" src="assets/images/paneer-fritters-recipe-f2.jpg"></div>
 		</div>
 	</div>
 
+	<div id="outer_box_book_display">
+		<div id="inner_box_book_display">
+			<div class="inner_store_container_book">
+				<div class="home_image_book"><img class="home_image_book" src="../assets/images/lillys.jpeg"></div>
+				<div class="home_image_book"><img class="home_image_book" src="../assets/images/the-female-factor.jpeg"></div>
+				<div class="home_image_book"><img class="home_image_book" src="../assets/images/gluten-free.jpg"></div>
+				<div class="home_image_book"><img class="home_image_book" src="../assets/images/jane-patisery.jpeg"></div>
+			</div>
+		</div>
+		<h1><a href="store/store.html">Press here</a> to go to our recipe book store.</h1>
+	</div>
+	<div id="text_box_home"><h1>See our recipe of the month!</h1></div>
 	<div id="home_decription_box_outer">
 		<div id="home_decription_box_inner">
 			<div id="home_description_box_text_">
@@ -69,7 +113,6 @@
 	        	<div class="outer_form_box_footer">
 	    	    	<div class="inner_form_box_footer">
 	    	    		<h3>Get in touch</h3>
-
 	    	            <form class="main_footer" id="contact-form">
 	    	            	<label for="fullname"></label>
 	    	    	        <input class="contact_input_boxes_footer" placeholder="Name" type="text" name="FullName" minlength="1" required>
@@ -83,10 +126,16 @@
 	    	    	        <div class="contact_submit_box_footer">
 	    	    	   	        <input type="submit" name="Submit">
 	    	    	        </div>
-
 	    	    	    </form>  
 	    	    	</div>    
 	    	    </div>
+	        </div>
+			<div class="images_display_footer">
+	        	<h3>Start Cooking Now!</h3>
+	        	<div class="image1_footer"><img class="footer_image" src="assets/images/cauliflower-rice-paella-spanish-rice-f.jpg"></div>
+	        	<div class="image2_footer"><img class="footer_image" src="assets/images/stuffed-chicken-kiev-patties-f.jpg"></div>
+	        	<div class="image3_footer"><img class="footer_image" src="assets/images/rainbow-chicken-dinner-paleo-2.jpg"></div>
+	        	<div class="image4_footer"><img class="footer_image" src="assets/images/paneer-fritters-recipe-f2.jpg"></div>
 	        </div>
 
 	    </div>  
@@ -105,6 +154,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script> 
+
+<script src="https://kit.fontawesome.com/22bd9419e7.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
