@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | What's for Dinner?</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/static/index.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../template/static/index.css') }}" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://kit.fontawesome.com/22bd9419e7.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<div class="logo_in_header">
+					<img src="assets/images/banner.jpeg" alt="">
+				</div>
+				<ul class="nav_main">
+					<li class="nav_buttons_active">Home</li>
+					<a href="store/store.html"><li class="nav_buttons">Store</li></a>
+					<a href="recipes/recipes.html"><li class="nav_buttons">Recipes</li></a>
+					<!--<a href="login/login.html"><li class="nav_buttons">Login</li></a>-->
+					<a href="/login"><li class="nav_buttons">Login</li></a>
+					<a href="/signup"><li class="nav_buttons">Signup</li></a>
+					<!--<a href="login/signup.html"><li class="nav_buttons">Signup</li></a>-->
+				</ul>
+			</nav>
+		</header>
+		<div id="main_image">
+			<div class="home_box_right"></div>
+			<img id="home_main_image" src="assets/images/banner.jpg"></div>
+			<div id="home_banner_text_outer">
+			    <div id="banner_text">
+					<div id="inner_home_text_banner">
+			        <h1>Whats for Dinner?<br></h1>
+						<h4>Welcome to our recipe library</h4>
+			        <p>Wonderful, delicious and delightful dinner recipes.</p>
+					</div>
+			    </div>
+			</div>
+	    </div>
+	<div id="about_icon_box">
+	    <div class="icon_box_inner">
+			<span class="pink_circle">
+	    		<span class="icon_about"><i class="fas fa-utensils"></i></span>
+			</span>
+	    	<h4>Eat</h4>
+	    	<p>A one stop web recipe subscription service for all of your culinary needs.</p>
+	    </div>
+	    <div class="icon_box_inner">
+	        <span class="pink_circle">
+	    		<span class="icon_about"><i class="fas fa-directions"></i></span>
+	    	</span>
+	    	<h4>Direction</h4>
+	    	<p>Gain direction on what <br> foods to eat and when!</p>
+	    </div>
+
+	    <div class="icon_box_inner">
+	    	<span class="pink_circle">
+	    		<span class="icon_about"><i class="fas fa-couch"></i></span>
+	    	</span>
+	    	<h4>Relax</h4>
+	    	<p>Relax every evening knowing <br> that tomorrow's dinner <br> is sorted by us.</p>
+	    </div>
+	</div>
+
+	<div id="filler_box_recipe_display"></div>
+	<div id="outer_box_recipe_display">
+		<h1><a href="login/login.html">Subscribe</a> to gain access to our recipes! There is a new range out every week. Receive these delicious recipes straight into your inbox! </h1>
+		<div id="inner_box_recipe_display">
+			<div class="display_recipe_box"><img  class="display_recipe_box_img" src="assets/images/cauliflower-rice-paella-spanish-rice-f.jpg"></div>
+			<div class="display_recipe_box"><img  class="display_recipe_box_img" src="assets/images/keto-chicken-satay-peanut-sauce-f.jpg"></div>
+			<div class="display_recipe_box"><img  class="display_recipe_box_img" src="assets/images/paneer-fritters-recipe-f2.jpg"></div>
+		</div>
+	</div>
+
+	<div id="outer_box_book_display">
+		<div id="inner_box_book_display">
+			<div class="book_inner_store_container">
+				<div class="home_image_book"><img class="home_image_book" src="assets/images/lillys.jpeg"></div>
+				<div class="home_image_book"><img class="home_image_book" src="assets/images/the-female-factor.jpeg"></div>
+				<div class="home_image_book"><img class="home_image_book" src="assets/images/gluten-free.jpg"></div>
+				<div class="home_image_book"><img class="home_image_book" src="assets/images/jane-patisery.jpeg"></div>
+			</div>
+		</div>
+		<h1><a href="store/store.html">Press here</a> to go to our recipe book store.</h1>
+	</div>
+	<div id="text_box_home"><h1>See our recipe of the month!</h1></div>
+	<div id="home_decription_box_outer">
+		<div id="home_decription_box_inner">
+			<div id="home_description_box_text_">
+				<div id="home_description_box_text_area">
+					<p>KETO CHICKEN SATAY WITH SPICY PEANUT SAUCE:</p>
+					<p>Learn how to make low-carb, keto chicken satay skewers with spicy peanut sauce. The meat is marinated with a mix of spices</p>
+				</div>
+			</div>
+		</div>
+		<div id="home_description_image">
+			<img id="home_description_image_inner" src="assets/images/keto-chicken-satay-peanut-sauce-f.jpg">
+		</div>
+	</div>
+
+    <footer class="main_footer">
+	    <div class="upper_footer">
+
+	        <div class="adress_in_upper_footer">
+		        <h3>Contact Us</h3>
+		            <ul>
+			            <li><i class="fas fa-map-marker-alt"></i>Limerick City, Limerick</li>
+			            <li><i class="fas fa-phone"></i>Phone: +(0)85 3245969</li>
+			            <li><i class="far fa-envelope"></i>Email: whatsfordinner@gmail.com</li>
+		            </ul>
+	        </div>
+	        <div class="contact_us_form_footer">
+	        	<div class="outer_form_box_footer">
+	    	    	<div class="inner_form_box_footer">
+	    	    		<h3>Get in touch</h3>
+	    	            <form class="main_footer" id="contact-form">
+	    	            	<label for="fullname"></label>
+	    	    	        <input class="contact_input_boxes_footer" placeholder="Name" type="text" name="FullName" minlength="1" required>
+
+	    	    	        <input class="contact_input_boxes_footer" placeholder="Phone" type="text" name="Phone" minlength="1" required>
+
+	    	    	        <input class="contact_input_boxes_footer" placeholder="Email" type="text" name="Email" minlength="1" required>
+
+	    	    	        <textarea class="contact_input_boxes_footer" placeholder="Message" type="text" name="Message" minlength="1" required></textarea>
+
+	    	    	        <div class="contact_submit_box_footer">
+	    	    	   	        <input type="submit" name="Submit">
+	    	    	        </div>
+	    	    	    </form>  
+	    	    	</div>    
+	    	    </div>
+	        </div>
+			<div class="images_display_footer">
+	        	<h3>Start Cooking Now!</h3>
+	        	<div class="image1_footer"><img class="footer_image" src="assets/images/cauliflower-rice-paella-spanish-rice-f.jpg"></div>
+	        	<div class="image2_footer"><img class="footer_image" src="assets/images/stuffed-chicken-kiev-patties-f.jpg"></div>
+	        	<div class="image3_footer"><img class="footer_image" src="assets/images/rainbow-chicken-dinner-paleo-2.jpg"></div>
+	        	<div class="image4_footer"><img class="footer_image" src="assets/images/paneer-fritters-recipe-f2.jpg"></div>
+	        </div>
+
+	    </div>  
+
+        <div class="lower_footer">   
+		   &copy;2021
+		</div>  
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="assets/index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script> 
+
+<script src="https://kit.fontawesome.com/22bd9419e7.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

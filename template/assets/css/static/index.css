@@ -220,8 +220,9 @@ input.contact_input_boxes_footer{
 	font-family: 'Poppins', sans-serif;
 }
 
-textarea.contact_input_boxes_footer{
-	width: 430px;
+
+textarea.contact_input_boxes_footer {
+	width: 473px;
 	padding: 12px 19px;
 	margin-bottom: 20px;
 	height: auto;
@@ -232,7 +233,6 @@ textarea.contact_input_boxes_footer{
 	border: #b1b0b0 solid 1px;
 	line-height: 25px;
 	font-family: 'Poppins', sans-serif;
-
 }
 
 input[type=submit]{
@@ -1140,7 +1140,7 @@ span.icon_about{
 #home_room_description_box_text_area{
 	width: auto;
 	height: auto;
-
+}
 
 /*-------------------------Store---------------------------*/
 
@@ -1165,7 +1165,7 @@ span.icon_about{
 }
 
 .inner_store_container img{
-    padding-left:65px;
+    padding-left:0px;
 }
 
 .middle_store_container{
@@ -1214,4 +1214,70 @@ span.icon_about{
 	height: auto;
 	cursor: pointer;
 	text-align:center;
+}
+
+/*-----------------------------------Recipes----------------------------------------*/
+
+.text_box_inner{
+	background: #E3AFBC;
+	height: auto;
+	width: 600px;
+	margin:0 auto;
+	margin-top: 30px;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 500;
+	font-family:'Poppins', sans-serif;
+	text-align: center;
+	color: #5D001E;
+	border-radius: 10px;
+}
+
+.text_box_outer{
+	height: 125px;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.image_recipe_outer_box{
+	float: left;
+	width: 500px;
+	height: 500px;
+	padding:50px 60px 50px 60px;
+	margin-left: 90px;
+	margin-top: 50px;
+	border: solid 2px #5D001E;
+	border-radius: 10px;
+	background: white;
+}
+
+.recipe_image{
+	width: 100%;
+	height: 300px;
+	background: blue;
+	float: left;
+	border-radius: 10px;
+}
+
+.recipe_image img{
+	object-fit: contain;
+}
+
+.recipe_text_box{
+    background: #E3AFBC;
+	height: auto;
+	width: 300px;
+	margin:0 auto;
+	margin-top: 50px;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 500;
+	font-family:'Poppins', sans-serif;
+	text-align: center;
+	color: #5D001E;
+	border-radius: 10px;
+	padding-top: 10px;
+
+
 }

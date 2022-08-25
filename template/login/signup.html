@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login | What's for Dinner?</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div id="login_wrapper">
+	    <header>
+		    <nav>
+<!--		    	<div class="logo_in_header">-->
+<!--				    <img src="" alt="">-->
+<!--		        </div>-->
+		        <ul class="nav_main">
+			        <a href="../index.html"><li class="nav_buttons">Home</li></a>
+			        <a href="../store/store.html"><li class="nav_buttons">Store</li></a>
+			        <a href="../recipes/recipes.html"><li class="nav_buttons">Recipes</li></a>
+                  <a href="login.html"><li class="nav_buttons">Login</li></a>
+			        <li class="nav_buttons_active">Signup</li>
+		        </ul>
+	        </nav>
+	    </header>
+	        <main>
+	        	<div class="login_header_box_outer">
+	        		<div class="login_header_box_inner">
+	        			<h3>Sign Up</h3>
+	        	    </div>
+	    	    </div>
+	    	    <div id="outer_form_box">
+					<div id="inner_form_box">
+						<form id="login-form" method="post" action="/savedetails">
+							<label><b>Email/User Name</b></label>
+							<input type="text" placeholder="Enter Email" name="USERNAME" required>
+
+							<label><b>Password</b></label>
+							<input type="text" placeholder="Enter Password" name="PASSWORD" required>
+
+							<label><b>First Name</b></label>
+							<input input type="text" name="FIRST_NAME" placeholder="Enter First Name" required>
+
+							<label><b>Second Name</b></label>
+							<input type="text" placeholder="Enter Second Name" name="SECOND_NAME" required>
+
+							<label><b>Address</b></label>
+							<input type="text" placeholder="Enter Address" name="ADRESS" required>
+
+							<label><b>Phone Number</b></label>
+							<input type="text" placeholder="Enter Phone" name="TELEPHONE" required>
+
+							<p id="error-list">You have (<span id="error-count"></span>) errors</p>
+							<input type="submit" name="Press">
+						</form>
+					</div>
+				</div>
+	    	</main>
+	    </div>
+	</div>
+
+	<footer class="login_footer">
+		<p>&copy;2022</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="../assets/javascript/index.js"></script>
+
+	<script>
+	var modal = document.getElementById('id01');
+	window.onclick = function(event) {
+	if (event.target == modal) {
+	modal.style.display = "none";}
+	}
+    </script>
+
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>  -->
+<!--    -->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>  -->
+
+</body>
+</html>
