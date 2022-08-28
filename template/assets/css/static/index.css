@@ -19,6 +19,10 @@ ul, li, ol {
 	background:#E3E2DF;
 }
 
+a {
+text-decoration:none;
+}
+
 /*-----------------------------------Header Section-------------------------*/
 
 header{
@@ -385,120 +389,6 @@ footer.contact_footer{
 
 /* Sign up */
 
-* {box-sizing: border-box}
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border-radius: 10px;
-  font-size: 14px;
-  line-height: 14px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 10px;
-  background: #E3E2DF;
-  cursor: pointer;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #E3E2DF;
-  outline: none;
-  color: #5D001E;
-  border-radius: 10px;
-  border: #5D001E solid 1px;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #E3AFBC;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-  padding: 14px 20px;
-  border-radius: 10px;
-  border: #5D001E solid 1px;
-}
-.cancelbtn:hover {
-  background: #CD5C5C;
-}
-
-.signupbtn:hover {
-  background: #B2D3C2;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #E3E2DF;
-  padding-top: 50px;
-  font-family: 'Poppins', sans-serif;
-  color: #E3E2DF;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #9A1750;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
-
-
 #login_wrapper{
 	float: left;
 	width: 100%;
@@ -512,7 +402,7 @@ hr {
 	float: left;
 	width: 100%;
 	height: auto;
-	padding-top: 0px;
+	padding-top: 60px;
 	margin-bottom:10px;
 }
 
@@ -561,7 +451,7 @@ input[type=submit]{
 	cursor: pointer;
 }
 
-#singup-button{
+#signup-button{
 	font-size: 14px;
 	line-height: 14px;
 	font-family: 'Poppins', sans-serif;
@@ -570,11 +460,12 @@ input[type=submit]{
 	color: #E3E2DF;
 	border-radius: 10px;
 	border: #F6C6EA solid 1px;
-	width: 150px;
+	width: 110px;
 	padding: 12px 19px;
 	margin-bottom: 20px;
 	height: auto;
 	cursor: pointer;
+	margin-left: 175px;
 }
 /*Change color of below*/
 
@@ -585,16 +476,13 @@ input[type=submit]:hover {
 	opacity:2;
 }
 
-#singup-button-box {
-	text-align: center;
+
+#signup-button-box {
+    margin-left: auto;
+    margin-right:auto;
 }
 
-#singup-button {
-	width: 150px;
-    padding: 12px 19px;
-}
-
-#singup-button:hover {
+#signup-button:hover {
 	background:#EE4C7C;
 	border: #5D001E solid 1px;
 	color: #E3E2DF;
@@ -698,12 +586,12 @@ p#error-list{
 }
 
 #home_banner_text_outer{
-	float: left;
-	width: auto;
+	width: 80%;
 	height: 300px;
 	margin-top: -350px;
-	margin-left: 30%;
-	text-align:center;
+	display: flex;
+	justify-content: center;
+	padding-right:10px;
 }
 
 #inner_home_text_banner{
@@ -714,7 +602,6 @@ p#error-list{
 	background:#E3AFBC;
 	margin-bottom: 10px;
 	color: #5D001E;
-
 }
 
 #text_box_home_outer{
@@ -768,7 +655,6 @@ p#error-list{
 	width: 100%;
 	height: 700px;
 	float: left;
-	padding-right: 20px;
 	background: #E3E2DF;
 
 }
@@ -838,12 +724,13 @@ p#error-list{
 }
 
 #about_icon_box{
-	width: 100%;
+	width: 80%;
 	height: 900px;
 	font-size: 18px;
 	line-height: 22px;
 	font-family: 'Poppins', sans-serif;
 	background: #E3E2DF;
+	margin-left:10%;
 }
 
 #about_icon_box p{
@@ -852,6 +739,7 @@ p#error-list{
 	font-family: 'Poppins', sans-serif;
 	color: #5D001E;
 	text-align: center;
+	padding: 0 0.5% 0 0.5%;
 }
 .icon_box_inner h4{
 	font-weight: bold;
@@ -865,13 +753,12 @@ p#error-list{
 }
 
 .icon_box_inner{
-	float: left;
 	width: 20%;
 	height: 500px;
 	background: white;
-	text-align: left;
-	margin-left: 130px;
+	margin-left: 10%;
 	border-radius: 5%;
+	float: left;
 }
 
 .pink_circle{
@@ -879,22 +766,22 @@ p#error-list{
 	width: 190px;
 	background: #E3AFBC;
 	border-radius: 50%;
-	display: inline-block;
-	margin-left: 30px;
 	margin-top: 70px;
 	opacity:0.5;
+	display: flex;
+	justify-content: center;
+	margin-left:14%;
 }
 
 span.icon_about{
-	height: 300px;
-	width: 300px;
+	height: auto;
+	width: auto;
 }
 
 .fa-utensils{
 	font-size: 100px;
 	color: white;
-	margin-left: 50px;
-	margin-top: 45px;
+	float: left;
 }
 
 #recipes_image_outer{
@@ -963,13 +850,12 @@ span.icon_about{
 }
 
 #outer_box_recipe_display{
-    width: 100%;
+    width: 80%;
     height: 600px;
     background: #E3E2DF;
     margin-top: 0px;
     margin-left: auto;
     margin-right:auto;
-    content: "";
     clear: both;
     display: table;
 }
@@ -989,13 +875,17 @@ span.icon_about{
     width: 80%;
     height: 600px;
     margin-top: 0px;
-    margin-left: auto;
-    margin-right:auto;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
 }
 
+.
+
 .display_recipe_box{
-     width:336.5px;
+     width:30%;
      height: 350px;
      background: #E3AFBC;
      float: left;
@@ -1015,7 +905,6 @@ span.icon_about{
     margin-top: 0px;
     margin-left: auto;
     margin-right:auto;
-    content: "";
     clear: both;
     display: table;
 }
@@ -1027,8 +916,8 @@ span.icon_about{
     margin-left: auto;
     margin-right:auto;
     box-sizing: border-box;
-    background:#EE4C7C;
-    margin-bottom:100px;
+    background: #EE4C7C;
+    margin-bottom: 100px;
 }
 
 #book_inner_store_container{
@@ -1041,7 +930,6 @@ span.icon_about{
     margin-top: 50px;
     margin-bottom:50px;
     width: 20%;
-    background:white;
     object-fit: contain;
 }
 
@@ -1061,7 +949,7 @@ span.icon_about{
 	color: #5D001E;
 	text-align: center;
 	position: absolute;
-	top: 390%;
+	top: 290%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background: #E3AFBC;
@@ -1245,7 +1133,7 @@ span.icon_about{
 	width: 500px;
 	height: 500px;
 	padding:50px 60px 50px 60px;
-	margin-left: 90px;
+	margin-left: 210px;
 	margin-top: 50px;
 	border: solid 2px #5D001E;
 	border-radius: 10px;
@@ -1277,7 +1165,71 @@ span.icon_about{
 	text-align: center;
 	color: #5D001E;
 	border-radius: 10px;
-	padding-top: 10px;
+}
 
+.image_recipe_full_display_outer_box{
+	float: left;
+	width: 40%;
+	height: auto;
+	margin-left: 7%;
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+	border: solid 2px #5D001E;
+	border-radius: 10px;
+	background: white;
+	padding:2.5%;
+}
 
+.recipe_image_full_display{
+	width: 30%;
+	height: 30%;
+	background: blue;
+	float: left;
+	border-radius: 10px;
+	margin-top: 2.5%;
+	margin-left: 5%;
+}
+
+.recipe_image img{
+	object-fit: contain;
+}
+
+.recipe_full_display_text_box{
+    background: #E3AFBC;
+	height: auto;
+	width: 90%;
+	margin:0 auto;
+	margin-top: 50px;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 500;
+	font-family:'Poppins', sans-serif;
+	text-align: center;
+	color: #5D001E;
+	border-radius: 10px;
+}
+
+.recipe_full_display_text_box li{
+    font-size: 20px;
+	line-height: 30px;
+	list-style-type: ;
+	text-align:left;
+	padding-right:2.5%;
+	text-indent:5%;
+}
+.recipe_full_display_text_box ul{
+	margin-right: 5%;
+}
+
+.recipe_full_display_text_box h3{
+    font-size: 30px;
+	line-height: 35x;
+	padding-top:10%;
+	padding-bottom:5%;
+}
+
+.recipe_full_display_text_box p{
+    font-size: 20px;
+	line-height: 30px;
+	padding: 0% 5% 5% 5%;
 }

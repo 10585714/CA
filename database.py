@@ -1,5 +1,5 @@
 # # #Create a TABLE
-# import sqlite3
+import sqlite3
 # conn = sqlite3.connect('WhatsForDinner.db')
 #
 # print("Opened database successfully")
@@ -176,7 +176,7 @@
 # conn.commit()
 # print("Records created successfully")
 # conn.close()
-#
+
 # conn = sqlite3.connect('WhatsForDinner.db')
 # print("Opened database successfully")
 # cursor = conn.execute("SELECT * from USER")
@@ -190,3 +190,45 @@
 #     print("PHONE NUMBER = ", row[6], "\n")
 #     print("Operation done successfully")
 # conn.close()
+#
+# conn = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
+# conn.execute("INSERT INTO CONTACT(NAME, EMAIL, MESSAGE, TELEPHONE)\
+#                VALUES ('Bob', 'BOB@gmail.com', 'TEST', '0962738374')");
+# conn.commit()
+# print("Records created successfully")
+# conn.close()
+#
+# conn = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
+# cursor = conn.execute("SELECT * from CONTACT")
+# for row in cursor:
+#     print("ID = ", row[0])
+#     print("NAME = ", row[1])
+#     print("EMAIL = ", row[2])
+#     print("MESSAGE = ", row[3], "\n")
+#     print("TELEPHONE= ", row[4], "\n")
+# conn.close()
+#
+# conn = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
+# conn.execute("INSERT INTO USER(USERNAME, PASSWORD, FIRST_NAME, LAST_NAME, ADRESS, TELEPHONE, USERTYPE )\
+#                VALUES ('BOB', 'BOB123', 'TEST', 'TEST', 'PATRICKS STREET LIMERICK', '087158767', 'A')");
+# conn.commit()
+# print("Records created successfully")
+# conn.close()
+
+conn = sqlite3.connect('WhatsForDinner.db')
+print("Opened database successfully")
+cursor = conn.execute("SELECT * from USER")
+for row in cursor:
+    print("ID = ", row[0])
+    print("USER NAME = ", row[1])
+    print("PASSWORD = ", row[2])
+    print("FIRSTNAME = ", row[3], "\n")
+    print("LASTNAME= ", row[4], "\n")
+    print("ADRESS = ", row[5], "\n")
+    print("PHONE NUMBER = ", row[6], "\n")
+    print("USER TYPE = ", row[7], "\n")
+    print("Operation done successfully")
+conn.close()

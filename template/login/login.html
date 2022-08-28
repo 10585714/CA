@@ -3,7 +3,7 @@
 <head>
 	<title>Login | What's for Dinner?</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/static/index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -32,13 +32,12 @@
 	    	    </div>
 	    	    <div id="outer_form_box">
 					<div id="inner_form_box">
-						<form id="login-form" method="post" action="">
-							<label for="username"></label>
-							<input class="login_input_boxes_login_page"  id="username" placeholder="User Name" type="text" name="username" minlength="1" required>
+						<form id="login-form" method="post"  action="/login">
+							<input class="login_input_boxes_login_page"  id="username" placeholder="User Name" type="username" name="username" minlength="1" required>
 							<input class="login_input_boxes_login_page" id="password" placeholder="Password" type="password" name="password" minlength="1" required>
 							<p id="error-list">You have (<span id="error-count"></span>) errors</p>
 	    	    	        <input type="submit" name="Press">
-							<a href="/signup">Signup</a>
+							<div id="signup-button-box"><div id="signup-button"><a href="/signup">Signup</a></div></div>
 						</form>
 					</div>
 				</div>

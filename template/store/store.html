@@ -121,18 +121,19 @@
 	        <div class="contact_us_form_footer">
 	        	<div class="outer_form_box_footer">
 	    	    	<div class="inner_form_box_footer">
-	    	    		<h3>Get in touch</h3>
-	    	            <form class="main_footer" id="contact-form">
-	    	            	<label for="fullname"></label>
-	    	    	        <input class="contact_input_boxes_footer" placeholder="Name" type="text" name="FullName" minlength="1" required>
+						<h3>Get in touch</h3>
+	    	            <form class="main_footer" id="contact-form" method="post" action="/savecontact">
 
-	    	    	        <input class="contact_input_boxes_footer" placeholder="Phone" type="text" name="Phone" minlength="1" required>
+							<input class="contact_input_boxes_footer" placeholder="Name" type="text" name="name" minlength="1" required>
 
-	    	    	        <input class="contact_input_boxes_footer" placeholder="Email" type="text" name="Email" minlength="1" required>
+	    	    	        <input class="contact_input_boxes_footer" placeholder="Phone" type="text" name="phone" minlength="1" required>
 
-	    	    	        <textarea class="contact_input_boxes_footer" placeholder="Message" type="text" name="Message" minlength="1" required></textarea>
+	    	    	        <input class="contact_input_boxes_footer" placeholder="Email" type="text" name="email" minlength="1" required>
+
+	    	    	        <textarea class="contact_input_boxes_footer" placeholder="Message" type="text" name="message" minlength="1" required></textarea>
 
 	    	    	        <div class="contact_submit_box_footer">
+
 	    	    	   	        <input type="submit" name="Submit">
 	    	    	        </div>
 	    	    	    </form>

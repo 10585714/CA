@@ -3,7 +3,7 @@
 <head>
 	<title>Login | What's for Dinner?</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/static/index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -19,8 +19,7 @@
 		        <ul class="nav_main">
 			        <a href="../index.html"><li class="nav_buttons">Home</li></a>
 			        <a href="../store/store.html"><li class="nav_buttons">Store</li></a>
-			        <a href="../recipes/recipes.html"><li class="nav_buttons">Recipes</li></a>
-                  <a href="login.html"><li class="nav_buttons">Login</li></a>
+					<a href="login.html"><li class="nav_buttons">Login</li></a>
 			        <li class="nav_buttons_active">Signup</li>
 		        </ul>
 	        </nav>
@@ -33,24 +32,13 @@
 	    	    </div>
 	    	    <div id="outer_form_box">
 					<div id="inner_form_box">
-						<form id="login-form" method="post" action="/savedetails">
-							<label><b>Email/User Name</b></label>
-							<input type="text" placeholder="Enter Email" name="USERNAME" required>
-
-							<label><b>Password</b></label>
-							<input type="text" placeholder="Enter Password" name="PASSWORD" required>
-
-							<label><b>First Name</b></label>
-							<input input type="text" name="FIRST_NAME" placeholder="Enter First Name" required>
-
-							<label><b>Second Name</b></label>
-							<input type="text" placeholder="Enter Second Name" name="SECOND_NAME" required>
-
-							<label><b>Address</b></label>
-							<input type="text" placeholder="Enter Address" name="ADRESS" required>
-
-							<label><b>Phone Number</b></label>
-							<input type="text" placeholder="Enter Phone" name="TELEPHONE" required>
+						<form id="login-form" method="post" action="/saveDetails">
+							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Email" name="username" required>
+							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Password" name="password" required>
+							<input class="login_input_boxes_login_page" input type="text" name="first_name" placeholder="Enter First Name" required>
+							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Second Name" name="last_name" required>
+							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Address" name="adress" required>
+							<input class="login_input_boxes_login_page"  type="text" placeholder="Enter Phone" name="telephone" required>
 
 							<p id="error-list">You have (<span id="error-count"></span>) errors</p>
 							<input type="submit" name="Press">
