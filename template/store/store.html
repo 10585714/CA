@@ -3,10 +3,9 @@
 <head>
 	<title>Store | What's for Dinner?</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/index.css') }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<script src="https://kit.fontawesome.com/22bd9419e7.js" crossorigin="anonymous"></script>
 	
@@ -16,10 +15,10 @@
 	    <header>
 		    <nav>
 		        <ul class="nav_main">
-			        <a href="../index.html"><li class="nav_buttons">Home</li></a>
+			        <a href="/"><li class="nav_buttons">Home</li></a>
                     <li class="nav_buttons_active">Store</li>
-			        <a href="../recipes/recipes.html"><li class="nav_buttons">Recipes</li></a>
-			        <a href="../logn/login.html"><li class="nav_buttons">Login</li></a>
+			        <a href="/signup"><li class="nav_buttons">Signup</li></a>
+			        <a href="/login"><li class="nav_buttons">Login</li></a>
 		        </ul>
 	        </nav>
 	    </header>
@@ -31,77 +30,66 @@
 			</div>
 			<div class="store_wrapper">
 				<div class="outer_store_container">
-					<div class="inner_store_container">
-						<img id=""# src="../assets/images/sweet-therapy.jpeg">
-						<p>SWEET THERAPY: THE JOY OF BAKING<br>
+					<div class="middle_container">
+						<div class="inner_store_container">
+							<img src="{{url_for('static', filename='/assets/images/sweet-therapy.jpeg')}}">
+							<p>SWEET THERAPY: THE JOY OF BAKING<br>
 							<br>by Una Leonard<br>
 							<br>€20.99<br>
 							<br>Hardback<br>
-							<div class="add_to_cart_button_box">
-						           <button onclick="#" class="add_to_cart_button_">Add to Cart</button>
-					        </div>
-						</p>
-					</div>
-					<div class="inner_store_container">
-						<img id="#" src="../assets/images/jane-patisery.jpeg">
-						<p>JANES PATISSERIE CELEBRATE H/B<br>
+							<div class="add_to_cart_button_box"><button onclick="#" class="add_to_cart_button_">Add to Cart</button></div>
+							</p>
+						</div>
+						<div class="inner_store_container">
+							<img id="#" src="{{url_for('static', filename='/assets/images/jane-patisery.jpeg')}}">
+							<p>JANES PATISSERIE CELEBRATE H/B<br>
 							<br>by Jane Dunn<br>
 							<br>€19.99<br>
 							<br>Hardback<br>
-							<div class="add_to_cart_button_box">
-						           <button onclick="#" class="add_to_cart_button_">Add to Cart</button>
-					        </div>
-						</p>
-					</div>
+							<div class="add_to_cart_button_box"><button onclick="#" class="add_to_cart_button_">Add to Cart</button></div>
+							</p>
+						</div>
 
-					<div class="inner_store_container">
-						<img id="#" src="../assets/images/lillys.jpeg">
-						<p>LILI'S FAMILY FAVOURITES<br>
+						<div class="inner_store_container">
+							<img id="#" src="{{url_for('static', filename='/assets/images/lillys.jpeg')}}">
+							<p>LILI'S FAMILY FAVOURITES<br>
 							<br>by Lili Forberg<br>
 							<br>€18.99<br>
 							<br>Hardback<br>
 							<div class="add_to_cart_button_box">
-						              <button onclick="#" class="add_to_cart_button_">Add to Cart</button>
-					        </div>
-						</p>
-					</div>
-
-					<div class="middle_store_container"></div>
-
-					<div class="inner_store_container">
-						<img id="#" src="../assets/images/veg-box.jpeg">
+							<button onclick="#" class="add_to_cart_button_">Add to Cart</button></div>
+							</p>
+						</div>
+						<div class="middle_store_container"></div>
+						<div class="inner_store_container">
+							<img id="#" src="{{url_for('static', filename='/assets/images/veg-box.jpeg')}}">
 						<p>THE VEG BOX<br>
 							<br>by Stephen Flynn<br>
 							<br>€19.99<br>
 							<br>Hardback<br>
 							<div class="add_to_cart_button_box">
-						           <button onclick="#" class="add_to_cart_button_">Add to Cart</button>
-					        </div>
+						           <button onclick="#" class="add_to_cart_button_">Add to Cart</button></div>
 						</p>
 					</div>
-
-					<div class="inner_store_container">
-						<img id="#" src="../assets/images/female-factor.jpeg">
-						<p>THE FEMALE FACTOR<br>
-							<br>by Hazel Wallace<br>
-							<br>€21.99<br>
-							<br>Hardback<br>
+						<div class="inner_store_container">
+							<img id="#" src="{{url_for('static', filename='/assets/images/female-factor.jpeg')}}">
+							<p>THE FEMALE FACTOR<br>
+								<br>by Hazel Wallace<br>
+								<br>€21.99<br>
+								<br>Hardback<br>
 							<div class="add_to_cart_button_box">
-						           <button onclick="#" class="add_to_cart_button_">Add to Cart</button>
-					        </div>
-						</p>
-					</div>
-
-					<div class="inner_store_container">
-						<img id="#" src="../assets/images/gluten-free.jpg">
-						<p>CAN YOU MAKE THAT GLUTEN-FREE?<br>
-							<br>by Megan McKenna<br>
-							<br>€18.99<br>
-							<br>Hardback<br>
-							<div class="add_to_cart_button_box">
-						           <button onclick="#" class="add_to_cart_button_">Add to Cart</button>
-					        </div>
-						</p>
+							<button onclick="#" class="add_to_cart_button_">Add to Cart</button></div>
+							</p>
+						</div>
+						<div class="inner_store_container">
+							<img id="#"  src="{{url_for('static', filename='/assets/images/gluten-free.jpg')}}">
+							<p>CAN YOU MAKE THAT GLUTEN-FREE?<br>
+								<br>by Megan McKenna<br>
+								<br>€18.99<br>
+								<br>Hardback<br>
+							<div class="add_to_cart_button_box"><button onclick="#" class="add_to_cart_button_">Add to Cart</button></div>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -142,19 +130,26 @@
 	        </div>
 			<div class="images_display_footer">
 	        	<h3>Start Cooking Now!</h3>
-	        	<div class="image1_footer"><img class="footer_image" src="../assets/images/cauliflower-rice-paella-spanish-rice-f.jpg"></div>
-	        	<div class="image2_footer"><img class="footer_image" src="../assets/images/stuffed-chicken-kiev-patties-f.jpg"></div>
-	        	<div class="image3_footer"><img class="footer_image" src="../assets/images/rainbow-chicken-dinner-paleo-2.jpg"></div>
-	        	<div class="image4_footer"><img class="footer_image" src="../assets/images/paneer-fritters-recipe-f2.jpg"></div>
+	        	<div class="image1_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/cauliflower-rice-paella-spanish-rice-f.jpg')}}"></div>
+	        	<div class="image2_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/stuffed-chicken-kiev-patties-f.jpg')}}"></div>
+	        	<div class="image3_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/rainbow-chicken-dinner-paleo-2.jpg')}}"></div>
+	        	<div class="image4_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/paneer-fritters-recipe-f2.jpg')}}"></div>
 	        </div>
-
 	    </div>
-
         <div class="lower_footer">
 		   &copy;2022
-		</div>  
+		</div>
     </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="assets/index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
 </body>
 </html>

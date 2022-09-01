@@ -17,32 +17,29 @@
 <!--				    <img src="" alt="">-->
 <!--		        </div>-->
 		        <ul class="nav_main">
-			        <a href="/"><li class="nav_buttons">Home</li></a>
-			        <a href="/store"><li class="nav_buttons">Store</li></a>
-					<a href="/login"><li class="nav_buttons">Login</li></a>
-			        <li class="nav_buttons_active">Signup</li>
+			        <a href="../index.html"><li class="nav_buttons">Home</li></a>
+			        <a href="../store/store.html"><li class="nav_buttons">Store</li></a>
+			        <a href="../recipes/recipes.html"><li class="nav_buttons">Recipes</li></a>
+			        <li class="nav_buttons_active">Login</li>
 		        </ul>
 	        </nav>
 	    </header>
 	        <main>
 	        	<div class="login_header_box_outer">
 	        		<div class="login_header_box_inner">
-	        			<h3>Sign Up</h3>
+	        			<h3>Login</h3>
 	        	    </div>
 	    	    </div>
 	    	    <div id="outer_form_box">
 					<div id="inner_form_box">
-						<form id="login-form" method="post" action="/saveDetails">
-							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Email" name="username" required>
-							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Password" name="password" required>
-							<input class="login_input_boxes_login_page" input type="text" name="first_name" placeholder="Enter First Name" required>
-							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Second Name" name="last_name" required>
-							<input class="login_input_boxes_login_page" type="text" placeholder="Enter Address" name="adress" required>
-							<input class="login_input_boxes_login_page"  type="text" placeholder="Enter Phone" name="telephone" required>
-
+						<form id="login-form" method="post"  action="/login">
+							<input class="login_input_boxes_login_page"  id="username" placeholder="User Name" type="username" name="username" minlength="1" required>
+							<input class="login_input_boxes_login_page" id="password" placeholder="Password" type="password" name="password" minlength="1" required>
 							<p id="error-list">You have (<span id="error-count"></span>) errors</p>
-							<input type="submit" name="Press">
+	    	    	        <input type="submit" name="Press">
+							<div id="signup-button-box"><div id="signup-button"><a href="/signup">Signup</a></div></div>
 						</form>
+                        <p class="para_login_failure">Login Failure, incorrect password or username</p>
 					</div>
 				</div>
 	    	</main>

@@ -7,30 +7,37 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
 </head>
 <body>
 	<div id="login_wrapper">
 	    <header>
 		    <nav>
 		        <ul class="nav_main">
-			        <a href="/"><li class="nav_buttons">Home</li></a>
+			        <li class="nav_buttons_active">Home</li>
 			        <a href="/store"><li class="nav_buttons">Store</li></a>
-			        <a href="/login"><li class="nav_buttons">Login</li></a>
-					<a href="/signup"><li class="nav_buttons">Sign Up</li></a>
+					<a href="/recipes"><li class="nav_buttons">Recipe</li></a>
+					<a href="/logout"><li class="nav_buttons_active">Log Out</li></a>
 		        </ul>
 	        </nav>
 	    </header>
 		<main>
-	       	<div class="login_header_box_outer">
-	       		<div class="login_header_box_inner">
-	       			<h3>Contact</h3>
-	       	    </div>
-	        </div>
-			<br>
-			<div class="contact_text"><h3>{{msg}}</h3></div>
-	    </main>
+			<div class="login_header_box_outer">
+				<div class="login_header_box_inner">
+					<h3>Welcome {{username}}</h3>
+				</div>
+			</div>
+			<div class="options_admin_menu">
+				<ul>
+					<li class="login_buttons_active">Home</li>
+					<a href="/view"><li class="login_buttons">View Users</li></a>
+					<a href="/delete"><li class="login_buttons">Delete Users</li></a>
+					<a href="/contact"><li class="login_buttons">Contact Messages</li></a>
+					<a href="/logout"><li class="login_buttons">Log Out</li></a>
+				</ul>
+			</div>
+		</main>
 	</div>
+
 	<footer class="login_footer">
 		<p>&copy;2022</p>
     </footer>
@@ -40,18 +47,6 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 
     <script type="text/javascript" src="../assets/javascript/index.js"></script>
-
-	<script>
-	var modal = document.getElementById('id01');
-	window.onclick = function(event) {
-	if (event.target == modal) {
-	modal.style.display = "none";}
-	}
-    </script>
-
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>  -->
-<!--    -->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>  -->
 
 </body>
 </html>

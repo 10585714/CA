@@ -1,4 +1,4 @@
-# # #Create a TABLE
+# Creating the database
 import sqlite3
 # conn = sqlite3.connect('WhatsForDinner.db')
 #
@@ -119,6 +119,8 @@ import sqlite3
 # print("Table created successfully")
 # conn.close()
 
+#Inserting all of the products avalible
+
 # conn = sqlite3.connect('WhatsForDinner.db')
 # print("Opened database successfully")
 # #conn.execute("INSERT INTO PRODUCT(NAME, DECS, CATERGORY, PRICE, QUANTITY, CREATED_AT)\
@@ -157,6 +159,8 @@ import sqlite3
 #     print("Operation done successfully")
 # conn.close()
 
+#Test case Inserting the Users into the database
+
 # conn = sqlite3.connect('WhatsForDinner.db')
 # print("Opened database successfully")
 # conn.execute("INSERT INTO USER(USERNAME, PASSWORD, FIRST_NAME, LAST_NAME, ADRESS, TELEPHONE, CREATED_AT)\
@@ -168,7 +172,8 @@ import sqlite3
 # conn.commit()
 # print("Records created successfully")
 # conn.close()
-#
+
+#Test case 1.9
 # conn = sqlite3.connect('WhatsForDinner.db')
 # print("Opened database successfully")
 # conn.execute("INSERT INTO USER(USERNAME, PASSWORD, FIRST_NAME, LAST_NAME, ADRESS, TELEPHONE)\
@@ -191,6 +196,10 @@ import sqlite3
 #     print("Operation done successfully")
 # conn.close()
 #
+
+
+#Test case 1.5 Contact form
+
 # conn = sqlite3.connect('WhatsForDinner.db')
 # print("Opened database successfully")
 # conn.execute("INSERT INTO CONTACT(NAME, EMAIL, MESSAGE, TELEPHONE)\
@@ -209,26 +218,243 @@ import sqlite3
 #     print("MESSAGE = ", row[3], "\n")
 #     print("TELEPHONE= ", row[4], "\n")
 # conn.close()
+
+# name='test1'
+# email='test1@gmail.com'
+# message='Test1'
+# phone='testphone'
+#
+# def savecontact(name, email, message, phone):
+#     con=sqlite3.connect("WhatsForDinner.db")
+#     cur = con.cursor()
+#     cur.execute("INSERT INTO CONTACT(NAME, EMAIL, MESSAGE, TELEPHONE) values (?,?,?,?)",(name, email, message, phone))
+#     con.commit()
+#     con.close()
+#
+# if savecontact(name, email, message, phone):
+#     print('Message Added')
+# else:
+#     print('Message not deleted')
 #
 # conn = sqlite3.connect('WhatsForDinner.db')
 # print("Opened database successfully")
+# cursor = conn.execute("SELECT * from CONTACT")
+# for row in cursor:
+#     print("ID = ", row[0])
+#     print("NAME = ", row[1])
+#     print("EMAIL = ", row[2])
+#     print("MESSAGE = ", row[3], "\n")
+#     print("TELEPHONE= ", row[4], "\n")
+# conn.close()
+
+#Test Case 1.8
+# conn = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
 # conn.execute("INSERT INTO USER(USERNAME, PASSWORD, FIRST_NAME, LAST_NAME, ADRESS, TELEPHONE, USERTYPE )\
-#                VALUES ('BOB', 'BOB123', 'TEST', 'TEST', 'PATRICKS STREET LIMERICK', '087158767', 'A')");
+#                VALUES ('Admin', 'Admin123', 'TEST', 'TEST', 'PATRICKS STREET LIMERICK', '087158767', 'A')");
 # conn.commit()
 # print("Records created successfully")
 # conn.close()
 
-conn = sqlite3.connect('WhatsForDinner.db')
-print("Opened database successfully")
-cursor = conn.execute("SELECT * from USER")
-for row in cursor:
-    print("ID = ", row[0])
-    print("USER NAME = ", row[1])
-    print("PASSWORD = ", row[2])
-    print("FIRSTNAME = ", row[3], "\n")
-    print("LASTNAME= ", row[4], "\n")
-    print("ADRESS = ", row[5], "\n")
-    print("PHONE NUMBER = ", row[6], "\n")
-    print("USER TYPE = ", row[7], "\n")
-    print("Operation done successfully")
-conn.close()
+#Test case 1.24
+# conn = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
+# cursor = conn.execute("SELECT * from USER")
+# for row in cursor:
+#     print("ID = ", row[0])
+#     print("USER NAME = ", row[1])
+#     print("PASSWORD = ", row[2])
+#     print("FIRSTNAME = ", row[3], "\n")
+#     print("LASTNAME= ", row[4], "\n")
+#     print("ADRESS = ", row[5], "\n")
+#     print("PHONE NUMBER = ", row[6], "\n")
+#     print("USER TYPE = ", row[7], "\n")
+#     print("Operation done successfully")
+
+#Test case 1.11
+
+# def check_user(username, password):
+#     con = sqlite3.connect('WhatsForDinner.db')
+#     cur = con.cursor()
+#     cur.execute('Select username,password FROM user WHERE username=? and password=?', (username, password))
+#     result = cur.fetchone()
+#     if result:
+#         return True
+#     else:
+#         return False
+#
+# username='BOB'
+# password='BOB123'
+#
+# if check_user(username, password):
+#     print('User match')
+# else:
+#     print('User not matched')
+#
+# #Test case 1.12
+#
+# username = 'BOB-rand'
+# password = 'BOB123'
+#
+# if check_user(username, password):
+#     print('User match')
+# else:
+#     print('User not matched')
+#
+# #Test case 1.13
+#
+# username = 'BOB'
+# password = 'BOB111'
+#
+# if check_user(username, password):
+#     print('User match')
+# else:
+#     print('User not matched')
+#
+# #Test case 1.14
+#
+# username = 'BOB23'
+# password = 'BOB111'
+#
+# if check_user(username, password):
+#     print('User match')
+# else:
+#     print('User not matched')
+
+#Test case 1.15
+
+# con = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
+# cur = con.cursor()
+# cursor = cur.execute("SELECT usertype from USER WHERE USERNAME='BOB'")
+# result = cur.fetchone()
+# admin = ('A',)
+# print("USER TYPE = ", result[0])
+# print(result)
+# if result == admin:
+#     print('Admin access')
+# else:
+#     print('Not Admin access')
+# print("Operation done successfully")
+# con.close()
+
+
+# con = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
+# cur = con.cursor()
+# cursor = cur.execute("SELECT usertype from USER WHERE USERNAME='BOB'")
+# print(cursor)
+# result = cur.fetchone()
+# print(result)
+# admin = ('A',)
+# for result in cursor:
+#     print("USER TYPE = ", result[0])
+#     print(result)
+#     admin = ('A',)
+#     if result == admin:
+#         print('Admin access')
+#     else:
+#         print('Not Admin access')
+#     print("Operation done successfully")
+# con.close()
+
+# def check_user_type(username):
+#     con = sqlite3.connect('WhatsForDinner.db')
+#     print("Opened database successfully")
+#     cur = con.cursor()
+#     cursor = cur.execute("SELECT usertype from USER WHERE username=?",(username,))
+#     print(username)
+#     print(cursor)
+#     result = cur.fetchone()
+#     admin = ('A',)
+#     print(result)
+#     if result == admin:
+#         print('Admin access')
+#         return True
+#     else:
+#         print('Not Admin access')
+#         return False
+#
+#     print("Operation done successfully")
+#     con.close()
+#
+
+#Test case 1.16
+# username='cleryruth@gmail.com'
+# if check_user_type(username):
+#     print('Admin acess')
+# else:
+#     print('No Acess')
+
+
+#Test case 1.15
+# # username='BOB'
+
+# if check_user_type(username):
+#     print('Admin acess')
+# else:
+#     print('No Acess')
+#
+# conn = sqlite3.connect('WhatsForDinner.db')
+# print("Opened database successfully")
+# cursor = conn.execute("SELECT * from USER WHERE USERTYPE='A'")
+# for row in cursor:
+#     print("ID = ", row[0])
+#     print("USER NAME = ", row[1])
+#     print("PASSWORD = ", row[2])
+#     print("FIRSTNAME = ", row[3], "\n")
+#     print("LASTNAME= ", row[4], "\n")
+#     print("ADRESS = ", row[5], "\n")
+#     print("PHONE NUMBER = ", row[6], "\n")
+#     print("USER TYPE = ", row[7], "\n")
+#     print("Operation done successfully")
+#
+# cursor = conn.execute("SELECT usertype from USER WHERE USERNAME='BOB'")
+# for row in cursor:
+#     print("Usertype = ", row[0])
+#     print("Operation done successfully")
+# conn.close()
+
+# def deleterecord(id):
+#     print(id)
+#     with sqlite3.connect("WhatsForDinner.db") as con:
+#         cur = con.cursor()
+#         cursor = cur.execute("SELECT USERNAME from USER WHERE USERID=?",(id,))
+#         result = cur.fetchone()
+#         print(cursor)
+#         print(result)
+#         try:
+#             cur = con.cursor()
+#             print(id)
+#             cur.execute("delete from user where USERID = ?", id)
+#             msg = "record successfully deleted"
+#             True
+#         except:
+#             msg = "This User can't be deleted"
+
+#Test case 1.28
+
+def deleterecord(id):
+    with sqlite3.connect("WhatsForDinner.db") as con:
+        try:
+            cur = con.cursor()
+            cur.execute("delete from USER where USERID = ?", id)
+            msg = "record successfully deleted"
+        except:
+            msg = "can't be deleted"
+id='1'
+
+if deleterecord(id):
+    print('User deleted')
+else:
+    print('User not deleted')
+
+#Test case 1.29
+
+id = '55'
+
+if deleterecord(id):
+    print('User deleted')
+else:
+    print('User not deleted')
+

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Recipes | What's for Dinner?</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/static/index.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/index.css') }}">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<script src="https://kit.fontawesome.com/22bd9419e7.js" crossorigin="anonymous"></script>
 </head>
@@ -17,7 +17,7 @@
 					<a href="/home"><li class="nav_buttons">Home</li></a>
 			        <a href="/store"><li class="nav_buttons">Store</li></a>
 			        <li class="nav_buttons_active">Recipes</li>
-			        <a href="/loginout"><li class="nav_buttons">Login</li></a>
+			        <a href="/logout"><li class="nav_buttons">Log Out</li></a>
 				</ul>
 			</nav>
 		</header>
@@ -32,27 +32,29 @@
 	        	    <p>Take a look at our wonderfull recipes below</p>
 	            </div>
 	        </div>
-	        <a href="/recipe1"><div class="image_recipe_outer_box">
-	        	<img class="recipe_image" src="../assets/images/cauliflower-rice-paella-spanish-rice-f.jpg">
+	        <a href="/recipe1">
+				<div class="image_recipe_outer_box">
+	        	<img class="recipe_image" src="{{url_for('static', filename='/assets/images/cauliflower-rice-paella-spanish-rice-f.jpg')}}">
 				<div class="recipe_text_box"><p>Cauliflower Rice Paella Spanish Rice</p></div>
-			</div></a>
-			<a href="/recipe2"><div class="image_recipe_outer_box">
-	        	<img class="recipe_image" src="../assets/images/keto-chicken-satay-peanut-sauce-f.jpg">
+				</div>
+			</a>
+			<a href="/recipe2">
+				<div class="image_recipe_outer_box">
+					<img class="recipe_image" src="{{url_for('static', filename='/assets/images/keto-chicken-satay-peanut-sauce-f.jpg')}}">
 				 <div class="recipe_text_box"><p>Keto Chicken Satay Peanut Sauce</p></div>
 	        </div></a>
 	         <a href="/recipe3"><div class="image_recipe_outer_box">
-	        	<img class="recipe_image" src="../assets/images/rainbow-chicken-dinner-paleo-2.jpg">
-				 <div class="recipe_text_box"><p> Rainbow Chicken Dinner Paleo </p></div>
+	        	<img class="recipe_image" src="{{url_for('static', filename='/assets/images/rainbow-chicken-dinner-paleo-2.jpg')}}">
+				 <div class="recipe_text_box"><p>Rainbow Chicken Dinner Paleo </p></div>
 	        </div></a>
 			<a href="/recipe4"><div class="image_recipe_outer_box">
-	        	<img class="recipe_image" src="../assets/images/stuffed-chicken-kiev-patties-f.jpg">
+	        	<img class="recipe_image" src="{{url_for('static', filename='/assets/images/stuffed-chicken-kiev-patties-f.jpg')}}">
 				 <div class="recipe_text_box"><p> Stuffed Chicken Kiev Patties </p></div>
 			</div></a>
 	    </main>
 	</div>
     <footer class="main_footer">
 	    <div class="upper_footer">
-
 	        <div class="adress_in_upper_footer">
 		        <h3>Contact Us</h3>
 		            <ul>
@@ -66,17 +68,11 @@
 	    	    	<div class="inner_form_box_footer">
 	    	    		<h3>Get in touch</h3>
 	    	            <form class="main_footer" id="contact-form" method="post" action="/savecontact">
-
 							<input class="contact_input_boxes_footer" placeholder="Name" type="text" name="name" minlength="1" required>
-
 	    	    	        <input class="contact_input_boxes_footer" placeholder="Phone" type="text" name="phone" minlength="1" required>
-
 	    	    	        <input class="contact_input_boxes_footer" placeholder="Email" type="text" name="email" minlength="1" required>
-
-	    	    	        <textarea class="contact_input_boxes_footer" placeholder="Message" type="text" name="message" minlength="1" required></textarea>
-
+							<textarea class="contact_input_boxes_footer" placeholder="Message" type="text" name="message" minlength="1" required></textarea>
 	    	    	        <div class="contact_submit_box_footer">
-
 	    	    	   	        <input type="submit" name="Submit">
 	    	    	        </div>
 	    	    	    </form>
@@ -85,14 +81,12 @@
 	        </div>
 			<div class="images_display_footer">
 	        	<h3>Start Cooking Now!</h3>
-	        	<div class="image1_footer"><img class="footer_image" src="../assets/images/cauliflower-rice-paella-spanish-rice-f.jpg"></div>
-	        	<div class="image2_footer"><img class="footer_image" src="../assets/images/stuffed-chicken-kiev-patties-f.jpg"></div>
-	        	<div class="image3_footer"><img class="footer_image" src="../assets/images/rainbow-chicken-dinner-paleo-2.jpg"></div>
-	        	<div class="image4_footer"><img class="footer_image" src="../assets/images/paneer-fritters-recipe-f2.jpg"></div>
+	        	<div class="image1_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/cauliflower-rice-paella-spanish-rice-f.jpg')}}"></div>
+	        	<div class="image2_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/stuffed-chicken-kiev-patties-f.jpg')}}"></div>
+	        	<div class="image3_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/rainbow-chicken-dinner-paleo-2.jpg')}}"></div>
+	        	<div class="image4_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/paneer-fritters-recipe-f2.jpg')}}"></div>
 	        </div>
-
 	    </div>
-
         <div class="lower_footer">
 		   &copy;2022
 		</div>

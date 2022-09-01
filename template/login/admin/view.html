@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<title>Login | What's for Dinner?</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/index.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="login_wrapper">
+	    <header>
+		    <nav>
+		        <ul class="nav_main">
+			        <li class="nav_buttons_active">Home</li>
+			        <a href="/store"><li class="nav_buttons">Store</li></a>
+					<a href="/recipes"><li class="nav_buttons">Recipe</li></a>
+					<a href="/logout"><li class="nav_buttons_active">Log Out</li></a>
+		        </ul>
+	        </nav>
+	    </header>
+		<main>
+	       	<div class="login_header_box_outer">
+	       		<div class="login_header_box_inner">
+	       			<h3>View Users</h3>
+	       	    </div>
+			</div>
+			<div class="view_table">
+				<div class="home_link"><h3>User Information</h3></div>
+				<table border=5>
+					<thead>
+					<td>ID</td>
+					<td>Username</td>
+					<td>Password</td>
+					<td>First Name</td>
+			     	<td>Last Name</td>
+					<td>Address</td>
+					<td>Phone Number</td>
+					<td>Usertype</td>
+					</thead>
+					{% for row in rows %}
+					<tr>
+						<td>{{row["USERID"]}}</td>
+						<td>{{row["username"]}}</td>
+						<td>{{row["password"]}}</td>
+						<td>{{row["first_name"]}}</td>
+						<td>{{row["last_name"]}}</td>
+						<td>{{row["adress"]}}</td>
+						<td>{{row["TELEPHONE"]}}</td>
+						<td>{{row["usertype"]}}</td>
+					</tr>
+					{% endfor %}
+				</table>
+				<br>
+				<br>
+				<div class="home_link"><a href="/admin">Go back to home page</a></div>
+			</div>
+		</main>
+	</div>
+
+	<footer class="login_footer">
+		<p>&copy;2022</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="../assets/javascript/index.js"></script>
 
 </body>
 </html>

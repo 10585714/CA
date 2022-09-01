@@ -3,10 +3,11 @@
 <head>
 	<title>Login | What's for Dinner?</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/static/index.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/index.css') }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -17,9 +18,9 @@
 <!--				    <img src="" alt="">-->
 <!--		        </div>-->
 		        <ul class="nav_main">
-			        <a href="../index.html"><li class="nav_buttons">Home</li></a>
-			        <a href="../store/store.html"><li class="nav_buttons">Store</li></a>
-			        <a href="../recipes/recipes.html"><li class="nav_buttons">Recipes</li></a>
+			        <a href="/"><li class="nav_buttons">Home</li></a>
+			        <a href="/store"><li class="nav_buttons">Store</li></a>
+			        <a href="/signup"><li class="nav_buttons">Signup</li></a>
 			        <li class="nav_buttons_active">Login</li>
 		        </ul>
 	        </nav>
@@ -37,7 +38,7 @@
 							<input class="login_input_boxes_login_page" id="password" placeholder="Password" type="password" name="password" minlength="1" required>
 							<p id="error-list">You have (<span id="error-count"></span>) errors</p>
 	    	    	        <input type="submit" name="Press">
-							<div id="signup-button-box"><div id="signup-button"><a href="/signup">Signup</a></div></div>
+							<div id="signup-button-box"><div id="signup-button"><a href="/signup" id="sign-up">Signup</a></div></div>
 						</form>
 					</div>
 				</div>

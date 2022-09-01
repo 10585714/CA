@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<title>Login | What's for Dinner?</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/index.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="login_wrapper">
+	    <header>
+		    <nav>
+		        <ul class="nav_main">
+			        <li class="nav_buttons_active">Home</li>
+			        <a href="/store"><li class="nav_buttons">Store</li></a>
+					<a href="/recipes"><li class="nav_buttons">Recipe</li></a>
+					<a href="/logout"><li class="nav_buttons_active">Log Out</li></a>
+		        </ul>
+	        </nav>
+	    </header>
+		<main>
+	       	<div class="login_header_box_outer">
+	       		<div class="login_header_box_inner">
+	       			<h3>Delete User</h3>
+	       	    </div>
+            </div>
+            <form action="/deleterecord" method="post" class="delete_user_form">
+                Employee Id <input type="text" name="id" class="delete_input_boxes_footer">
+                <input type="submit" value="Submit">
+            </form>
+		</main>
+	</div>
+	<footer class="login_footer">
+		<p>&copy;2022</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="../assets/javascript/index.js"></script>
 
 </body>
 </html>

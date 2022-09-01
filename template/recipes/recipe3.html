@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Recipes | What's for Dinner?</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/static/index.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/index.css') }}">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<script src="https://kit.fontawesome.com/22bd9419e7.js" crossorigin="anonymous"></script>
 </head>
@@ -16,8 +16,8 @@
 				<ul class="nav_main">
 					<a href="/home"><li class="nav_buttons">Home</li></a>
 			        <a href="/store"><li class="nav_buttons">Store</li></a>
-			        <a href="/recipe"><li class="nav_buttons">Recipe</li></a>
-			        <a href="/loginout"><li class="nav_buttons">Log Out</li></a>
+			        <a href="/recipes"><li class="nav_buttons">Recipe</li></a>
+			        <a href="/logout"><li class="nav_buttons">Log Out</li></a>
 				</ul>
 			</nav>
 		</header>
@@ -89,7 +89,7 @@
 					</p>
 				</div>
 			</div>
-			<img class="recipe_image_full_display" src="../assets/images/rainbow-chicken-dinner-paleo-2.jpg">
+			<img class="recipe_image_full_display" src="{{url_for('static', filename='/assets/images/rainbow-chicken-dinner-paleo-2.jpg')}}">
 	    </main>
 	</div>
     <footer class="main_footer">
@@ -127,14 +127,12 @@
 	        </div>
 			<div class="images_display_footer">
 	        	<h3>Start Cooking Now!</h3>
-	        	<div class="image1_footer"><img class="footer_image" src="../assets/images/cauliflower-rice-paella-spanish-rice-f.jpg"></div>
-	        	<div class="image2_footer"><img class="footer_image" src="../assets/images/stuffed-chicken-kiev-patties-f.jpg"></div>
-	        	<div class="image3_footer"><img class="footer_image" src="../assets/images/rainbow-chicken-dinner-paleo-2.jpg"></div>
-	        	<div class="image4_footer"><img class="footer_image" src="../assets/images/paneer-fritters-recipe-f2.jpg"></div>
+	        	<div class="image1_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/cauliflower-rice-paella-spanish-rice-f.jpg')}}"></div>
+	        	<div class="image2_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/stuffed-chicken-kiev-patties-f.jpg')}}"></div>
+	        	<div class="image3_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/rainbow-chicken-dinner-paleo-2.jpg')}}"></div>
+	        	<div class="image4_footer"><img class="footer_image" src="{{url_for('static', filename='/assets/images/paneer-fritters-recipe-f2.jpg')}}"></div>
 	        </div>
-
 	    </div>
-
         <div class="lower_footer">
 		   &copy;2022
 		</div>
